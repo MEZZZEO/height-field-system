@@ -1,3 +1,4 @@
+using Features.MaterialAccumulation.View;
 using Zenject;
 
 namespace Installers.Gameplay
@@ -6,6 +7,7 @@ namespace Installers.Gameplay
     {
         public static void Register(DiContainer container)
         {
+            container.BindInterfacesTo<MaterialAccumulationPanelInteractor>().AsSingle();
         }
     }
 }
